@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#003064">
+<title>Álvaro Betáncur · Forjas Bolívar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #003064;
+    --naranja: #FF8300;
+    --gris-oscuro: #4D4D4D;
+    --gris: #C4C4C4;
+    --fondo: #F4F6F9;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--fondo);
+    color: var(--navy);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+  }
+  main { width: 100%; max-width: 420px; }
+  .cabecera {
+    background: linear-gradient(160deg, var(--navy) 0%, #001A36 55%, #000000 100%);
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding: 32px 28px 26px;
+    border-bottom: 5px solid var(--naranja);
+  }
+  .logo { display: block; width: 52%; max-width: 190px; height: auto; margin: 0 auto 24px; }
+  h1 { font-size: 26px; font-weight: 700; line-height: 1.2; }
+  .cargo { margin-top: 6px; font-size: 15px; opacity: .85; }
+  .cuerpo {
+    background: var(--blanco);
+    border: 1px solid #E1E5EB;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    padding: 24px 28px 28px;
+  }
+  .guardar {
+    display: block;
+    text-align: center;
+    background: var(--naranja);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+  .guardar:active { transform: scale(.98); }
+  ul { list-style: none; }
+  li a {
+    display: flex; flex-direction: column;
+    padding: 13px 0;
+    border-bottom: 1px solid #E6E6E6;
+    text-decoration: none; color: var(--navy);
+  }
+  li:last-child a { border-bottom: 0; }
+  li span { font-size: 13px; color: var(--gris-oscuro); }
+  li strong { font-size: 16px; font-weight: 600; word-break: break-word; }
+  a:focus-visible { outline: 3px solid var(--naranja); outline-offset: 3px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <section class="cabecera">
+    <svg class="logo" viewBox="320 1140 1975 610" role="img" aria-label="Forjas Bolívar" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M806.24,1438.8c-60.75-.45-103.23-44.77-103.23-108.3s42.48-108.3,103.23-108.3,103.27,44.77,103.27,108.3-42.48,108.3-103.27,108.3M806.24,1156.43c-106.87,0-179.96,71.26-179.96,174.08s73.09,174.08,179.96,174.08,180.01-70.81,180.01-174.08-73.55-174.08-180.01-174.08"/><path fill="#fff" d="M1195.68,1327.77h-68.52v-101.88h68.52c36.1,0,63.49,18.73,63.49,51.64,0,30.13-27.39,50.24-63.49,50.24M1264.69,1371.63c42.48-13.69,71.26-50.28,71.26-94.11,0-64.88-52.53-109.69-127.92-109.69h-157.6v325.34h76.74v-111.49h66.23l63.98,111.49h85.85l-78.54-121.55h0Z"/><path fill="#fff" d="M1498.21,1167.83v215.2c0,34.75-22.36,57.56-54.37,57.56-12.3,0-30.13-2.74-43.82-6.37v58.95c17.82,5.48,43.82,9.12,65.33,9.12,63.04,0,109.6-45.22,109.6-111.49v-222.97h-76.74Z"/><path fill="#fff" d="M2143.21,1295.8c-41.09-5.52-73.5-10.06-73.5-40.68,0-23.75,23.75-40.68,59.81-40.68,39.29,0,68.07,22.86,67.62,54.83h66.68c0-65.33-57.07-112.84-136.09-112.84s-132.95,43.87-132.95,107.36c0,75.88,62.14,89.58,126.53,97.79,40.19,5.03,75.39,9.61,75.39,40.23,0,26.04-23.31,44.77-60.75,44.77-43.86,0-75.39-25.14-75.39-60.35h-68.97c0,68.56,59.36,118.35,142.07,118.35s137.94-46.16,137.94-112.84c0-74.94-65.29-88.67-128.37-95.95"/><path fill="#fff" d="M398.84,1710.42h-37.86v-46.32h37.86c17.91,0,30.66,9.69,30.66,23.06s-12.76,23.26-30.66,23.26M360.99,1605.48h37.45c15.82,0,26.94,8.22,26.94,19.74s-11.12,19.55-26.94,19.55h-37.45v-39.29ZM428.69,1654.25c12.55-3.52,21.59-15.86,21.59-30.05,0-22.65-19.95-39.08-48.12-39.08h-65.86v145.66h66.68c30.01,0,51.43-17.29,51.43-41.58,0-16.84-10.71-31.27-25.72-34.96"/><path fill="#fff" d="M740.33,1714.92c-20.15,0-34.34-15.21-34.34-36.39s14.19-36.42,34.34-36.42,34.59,15.21,34.59,36.42-14.64,36.39-34.59,36.39M740.33,1622.12c-33.52,0-56.79,23.26-56.79,56.41s23.27,56.38,56.79,56.38,56.79-23.26,56.79-56.38-23.43-56.41-56.79-56.41"/><path fill="#fff" d="M1027.32,1730.79h22.2v-151.84h-22.2v151.84Z"/><path fill="#fff" d="M1285.7,1730.79h22.24v-104.53h-22.24v104.53ZM1310.39,1579.35l-25.72,34.55h20.56l28.41-34.55h-23.26,0Z"/><path fill="#fff" d="M1618.97,1626.25l-30.25,87.24-30.01-87.24h-23.87l38.27,104.53h31.48l38.47-104.53h-24.09Z"/><path fill="#fff" d="M1915.82,1714.92c-19.95,0-34.55-15.41-34.55-36.39s14.6-36.42,34.55-36.42,34.38,15.21,34.38,36.42-14.39,36.39-34.38,36.39M1950.41,1626.25v15.66c-8.83-12.35-22.65-19.79-38.88-19.79-30.66,0-52.5,23.67-52.5,56.41s21.83,56.38,52.5,56.38c16.23,0,30.05-7.44,38.88-19.79v15.66h22.44v-104.53h-22.44Z"/><path fill="#fff" d="M2258.17,1622.57c-11.94,0-22.04,6.37-28.41,17.05v-13.37h-21.59v104.54h22.4v-57.2c0-18.52,9.89-31.69,24.69-31.69,4.13,0,10.5.82,16.27,3.27v-19.95c-4.54-1.63-9.28-2.65-13.37-2.65"/><path fill="#ff8400" d="M1829.9,1197.77c0,20.52-16.63,37.15-37.15,37.15s-37.15-16.63-37.15-37.15,16.63-37.15,37.15-37.15,37.15,16.63,37.15,37.15"/><path fill="#e74c1e" d="M1779.06,1287.71c0,20.52-16.63,37.15-37.15,37.15s-37.15-16.63-37.15-37.15,16.63-37.15,37.15-37.15,37.15,16.63,37.15,37.15"/><path fill="#e43918" d="M1739.95,1377.66c0,20.52-16.63,37.15-37.15,37.15s-37.15-16.63-37.15-37.15,16.63-37.15,37.15-37.15,37.15,16.63,37.15,37.15"/><path fill="#c92717" d="M1700.84,1467.61c0,20.52-16.63,37.15-37.15,37.15s-37.15-16.63-37.15-37.15,16.63-37.15,37.15-37.15,37.15,16.63,37.15,37.15"/><path fill="#e74c1e" d="M1802.52,1287.71c0,20.52,16.63,37.15,37.15,37.15s37.15-16.63,37.15-37.15-16.63-37.15-37.15-37.15-37.15,16.63-37.15,37.15"/><path fill="#e43918" d="M1841.63,1377.66c0,20.52,16.63,37.15,37.15,37.15s37.15-16.63,37.15-37.15-16.63-37.15-37.15-37.15-37.15,16.63-37.15,37.15"/><path fill="#c92717" d="M1880.74,1467.61c0,20.52,16.63,37.15,37.15,37.15s37.15-16.63,37.15-37.15-16.63-37.15-37.15-37.15-37.15,16.63-37.15,37.15"/><path fill="#fff" d="M479.34,1234.72h84.34v-78.25h-28.66l-63.53-.04c-78.58,0-132.95,43.86-132.95,107.36v229.14h75.18v-122.03h146.07v-77.47h-148.69s-4.42-60.01,68.23-58.71"/></svg>
+    <h1>Álvaro Betáncur</h1>
+    <p class="cargo">Director de Mercadeo y Ventas</p>
+  </section>
+  <section class="cuerpo">
+    <a class="guardar" href="contacto.vcf">Guardar contacto</a>
+    <ul>
+      <li><a href="tel:+573136147734"><span>Llamar</span><strong>+57 313 614 7734</strong></a></li>
+      <li><a href="https://wa.me/573136147734"><span>WhatsApp</span><strong>Escribir por WhatsApp</strong></a></li>
+      <li><a href="mailto:abetancur@forjasbolivar.com"><span>Correo</span><strong>abetancur@forjasbolivar.com</strong></a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
