@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariana González</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tinta: #1F2A44;
+    --acero: #5B6778;
+    --papel: #F7F8FA;
+    --linea: #DDE1E7;
+    --laton: #B08D57;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--papel);
+    color: var(--tinta);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+  }
+  main { width: 100%; max-width: 420px; }
+  .cabecera {
+    background: var(--tinta);
+    color: var(--blanco);
+    border-radius: 20px 20px 0 0;
+    padding: 36px 28px 28px;
+    border-bottom: 4px solid var(--laton);
+  }
+  .iniciales {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    border: 2px solid var(--laton);
+    display: grid; place-items: center;
+    font-size: 26px; font-weight: 800;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 28px; font-weight: 800; line-height: 1.15; }
+  .cargo { margin-top: 6px; font-size: 16px; opacity: .85; }
+  .empresa { margin-top: 2px; font-size: 15px; color: var(--laton); font-weight: 600; }
+  .cuerpo {
+    background: var(--blanco);
+    border: 1px solid var(--linea);
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    padding: 24px 28px 28px;
+  }
+  .guardar {
+    display: block;
+    text-align: center;
+    background: var(--laton);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 17px;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .guardar:active { transform: scale(.98); }
+  ul { list-style: none; }
+  li a {
+    display: flex; flex-direction: column;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--linea);
+    text-decoration: none; color: var(--tinta);
+  }
+  li:last-child a { border-bottom: 0; }
+  li span { font-size: 13px; color: var(--acero); }
+  li strong { font-size: 16px; font-weight: 600; word-break: break-word; }
+  a:focus-visible { outline: 3px solid var(--laton); outline-offset: 3px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <section class="cabecera">
+    <div class="iniciales">MG</div>
+    <h1>Mariana González</h1>
+    <p class="empresa">Forjas Bolívar</p>
+  </section>
+  <section class="cuerpo">
+    <a class="guardar" href="contacto.vcf">Guardar contacto</a>
+    <ul>
+      <li><a href="tel:+573137109036"><span>Llamar</span><strong>+57 313 710 9036</strong></a></li>
+      <li><a href="https://wa.me/573137109036"><span>WhatsApp</span><strong>Escribir por WhatsApp</strong></a></li>
+      <li><a href="mailto:mgonzalez@forjasbolivar.com"><span>Correo</span><strong>mgonzalez@forjasbolivar.com</strong></a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
